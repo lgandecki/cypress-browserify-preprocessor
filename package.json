@@ -1,5 +1,5 @@
 {
-  "name": "@cypress/browserify-preprocessor",
+  "name": "@cypress/browserify-preprocessor-babel7",
   "description": "Cypress preprocessor for bundling JavaScript via browserify",
   "version": "0.0.0-development",
   "author": "Chris Breiding <chris@cypress.io>",
@@ -59,10 +59,11 @@
     "sinon-chai": "2.13.0"
   },
   "dependencies": {
+    "@babel/core": "7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "@babel/preset-react": "^7.0.0-beta.47",
     "babel-plugin-add-module-exports": "0.2.1",
-    "babel-preset-env": "1.6.0",
-    "babel-preset-react": "6.24.1",
-    "babelify": "7.3.0",
+    "babelify": "github:babel/babelify#master",
     "bluebird": "3.5.0",
     "browserify": "14.4.0",
     "cjsxify": "0.3.0",
